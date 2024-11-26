@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Desktop/Semester-project"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "semester-project1 "
+	}
+}

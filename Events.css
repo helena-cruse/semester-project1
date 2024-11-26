@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+/* General Style*/
+
+html,body {
+        overflow-x: hidden;
+        margin: 0;  
+        padding: 0; 
+        background-color: rgba(255, 116, 17, 1);
+}
+
+/* Navigation menu */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    width: 100%;
+    background-color: rgba(253, 195, 154, 1);
+    font-family: "Orbitron", sans-serif;
+    padding: 10px 30px;  
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.navbar .left-section {
+    display: flex;
+    align-items: center;  
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-right: 10px; 
+    font-size: 3vw;
+}
+
+.header-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+.header-logo img {
+    height: 40px; 
+    width: auto;
+}
+
+.hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hamburger-menu img {
+    width: 40%;
+}
+
+.top-text {
+    margin-top: 10%;
+}
+
+.top-text p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron";
+    font-size: 4vw;
+    color: white;
+}
+
+
+.flask-child {
+    width: 40vw; 
+    height: 25vw;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.flask-child img {
+    width: 40vw; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.event1-text, .event2-text {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(253, 195, 154, 1); 
+    padding: 20px; 
+    max-width: 60%; 
+    margin: 10px auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    
+}
+
+.event1-text p {
+    font-family: "Exo 2";
+    font-size: 3vw;
+}
+
+.Nitrogen-child {
+    width: 40vw; 
+    height: 25vw;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.Nitrogen-child img {
+    width: 40vw; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;  
+}
+
+
+.event2-text p {
+    font-family: "exo 2";
+    font-size: 3vw;
+}
+
+/* Footer */
+
+.footer {
+    display: flex; 
+    justify-content: center; 
+    gap: 20%;
+    background-color: rgba(253, 195, 154, 1);
+    padding: 2%;
+}
+  
+.footer-flask {
+    position: relative;
+    width: 9%; 
+    height: auto; 
+    text-align: center; 
+}
+  
+.footer-flask img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.footer-flask .flask-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; 
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Orbitron";
+}

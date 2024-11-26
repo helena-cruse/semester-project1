@@ -1,0 +1,182 @@
+/* General Style */
+
+html, body {
+    overflow-x: hidden;
+    background-color: rgba(255, 116, 17, 1);
+    height: 100%; /* Ensures full page height */
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation menu */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    width: 100%;
+    background-color: rgba(253, 195, 154, 1);
+    font-family: "Orbitron", sans-serif;
+    padding: 10px 30px;  
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+.navbar .left-section {
+    display: flex;
+    align-items: center;  
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-right: 10px; 
+    font-size: 3vw;
+}
+
+.header-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.header-logo img {
+    height: 40px; 
+    width: auto;
+}
+
+.hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hamburger-menu img {
+    width: 40%;
+}
+
+/* Main Content */
+
+.wrapper {
+    flex: 1; /* Ensures content pushes the footer to the bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto); /* Includes the booking container */
+    align-items: center;
+    justify-items: center;
+    gap: 1vw; /* Adds consistent spacing between rows and columns */
+    }
+    
+
+/* Section Styling */
+
+.Geology-container, .Prehistoric-container, .Space-container, .Booking-container {
+    width: 60%;
+    padding: 8%;
+    background-color: rgb(136, 121, 59);
+    border-radius: 5%;
+    text-align: center;
+    margin: 5%;
+}
+
+.Geology-container p, .Prehistoric-container p, .Space-container p {
+    font-family: "Exo 2";
+    font-size: 1.8vw;
+    margin-top: 5%;
+    color: white;
+}
+
+.Geology-container img, .Prehistoric-container img, .Space-container img {
+    width: 20vw;
+}
+
+
+.Booking-container h2 {
+    font-family: "Orbitron", sans-serif;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 2vw;
+}
+
+.booking-form {
+    font-family: "Exo 2", sans-serif;
+    color: #000;
+}
+
+.booking-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1.2vw;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+.booking-form button {
+    background-color: #000;
+    color: #fff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.2vw;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+
+.footer {
+    display: flex; 
+    justify-content: center; 
+    gap: 20%;
+    background-color: rgba(253, 195, 154, 1);
+    padding: 2%;
+}
+  
+.footer-flask {
+    position: relative;
+    width: 9%; 
+    height: auto; 
+    text-align: center; 
+}
+  
+.footer-flask img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.footer-flask .flask-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; 
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Orbitron";
+}

@@ -1,0 +1,170 @@
+/* General Styling */
+html, body {
+    overflow-x: hidden;
+    background-color: rgba(255, 116, 17, 1);
+    height: 100%; 
+    margin: 0;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    width: 100%;
+    background-color: rgba(253, 195, 154, 1);
+    font-family: "Orbitron", sans-serif;
+    padding: 10px 30px;  
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.navbar .left-section {
+    display: flex;
+    align-items: center;  
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-right: 10px; 
+    font-size: 3vw;
+}
+
+.header-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+.header-logo img {
+    height: 40px; 
+    width: auto;
+}
+
+.hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hamburger-menu img {
+    width: 40%;
+}
+
+/* Confirmation Section */
+.confirmation-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    font-family: "exo 2";
+}
+
+.confirmation-container h2 {
+    font-size: 3vw;
+    margin-bottom: 2%;
+    font-weight: 700;
+}
+
+.confirmation-container p {
+    font-size: 1.5vw;
+    margin-bottom: 2%;
+}
+
+.booking-details {
+    background-color: rgba(253, 195, 154, 1);
+    color: #000;
+    padding: 2%;
+    border-radius: 1vw;
+    margin: 2% 0;
+    font-size: 1.5vw;
+    text-align: left;
+    width: 40%; 
+}
+
+.contact-link {
+    color: #000000; 
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5% 3%;
+    border-radius: 5%;
+    margin-top: 2%;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #444444;
+}
+
+/* Visitor Info Section */
+.visitor-info {
+    background-color: rgba(253, 195, 154, 1);
+    color: #000;
+    padding: 5%;
+    border-radius: 5%;
+    margin: 3% auto;
+    text-align: center;
+    width: 60%;
+    font-size: 1.2vw;
+}
+
+.visitor-info h3 {
+    font-size: 2vw;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+/* Footer */
+
+.footer {
+    display: flex; 
+    justify-content: center; 
+    gap: 20%;
+    background-color: rgba(253, 195, 154, 1);
+    padding: 2%;
+}
+  
+.footer-flask {
+    position: relative;
+    width: 9%; 
+    height: auto; 
+    text-align: center; 
+}
+  
+.footer-flask img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.footer-flask .flask-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; 
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Orbitron";
+}

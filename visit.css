@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+    display: flex; 
+    justify-content: center; 
+    gap: 20%;
+    background-color: rgba(253, 195, 154, 1);
+    padding: 2%;
+}
+  
+.footer-flask {
+    position: relative;
+    width: 9%; 
+    height: auto; 
+    text-align: center; 
+}
+  
+.footer-flask img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.footer-flask .flask-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; 
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Orbitron";
+}

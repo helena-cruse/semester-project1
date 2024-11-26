@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a web page for the Community Science Museum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Science Museum Ticket Information</title>
+    <link rel="stylesheet" href="Exhibitions.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation header-->
+    <header>
+        <nav class="navbar" alt="navigation-header">
+            <div class="left-section">
+                <a href="index.html" class="header-link">
+                    <h1>Community Science Museum</h1>
+                </a>
+                <div class="header-logo">
+                    <img src="logo.png" alt="Molecule-logo">
+                </div>
+            </div>
+
+            <div class="hamburger-menu">
+                <a href="Menu.html">
+                    <img src="solar_hamburger-menu-outline.png" alt="hamburger-menu">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main Content-->
+    <div class="wrapper">
+        <div class="container">
+            <div class="Geology-container">
+                <img src="Geology.png" alt="Volcano and stones to show the geology Exhibitions">
+                <p><strong>Geology Exhibition:</strong> Explore Earth's wonders with dazzling crystals, rare gemstones, and a volcano model that reveals the power of geology.</p>
+            </div>
+
+            <div class="Space-container">
+                <img src="space.png" alt="Planets in the solar system and a Rocketship to show the Space Exhibition">
+                <p><strong>Exploration Exhibition:</strong> Journey into space with a rocket model, solar system displays, and astronaut gear in this cosmic adventure.</p>
+            </div>
+
+            <div class="Prehistoric-container">
+              <img src="Prehistorical.png" alt="Mammoth and other prehistorical animals to show the prehistorical Exhibition">
+              <p><strong>Animal Exhibition:</strong> Discover the world of prehistoric creatures with a life-sized woolly mammoth, fossils, and interactive displays that bring ancient history to life.</p>
+          </div>
+
+        <div class="Booking-container">
+          <h2>Book an Exhibition</h2>
+          <form class="booking-form">
+              <label for="name">Full Name:</label><br>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+              
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+              
+              <label for="exhibition">Choose an Exhibition:</label><br>
+              <select id="exhibition" name="exhibition" required>
+                  <option value="geology">Geology Exhibition</option>
+                  <option value="prehistoric">Prehistoric Animal Exhibition</option>
+                  <option value="space">Space Exploration Exhibition</option>
+              </select><br><br>
+              
+              <label for="time">Choose a Time:</label><br>
+              <select id="time" name="time" required>
+                  <optgroup label="Monday">
+                      <option value="monday-12">Monday 12:00</option>
+                      <option value="monday-15">Monday 15:00</option>
+                  </optgroup>
+                  <optgroup label="Wednesday">
+                      <option value="wednesday-12">Wednesday 12:00</option>
+                      <option value="wednesday-15">Wednesday 15:00</option>
+                  </optgroup>
+              </select><br><br>
+              
+              <a href="booking-confirmed.html">
+              <button type="submit">Book Now</button>
+              </a>
+          </form>
+      </div>
+        </div>
+      
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-flask">
+                <a href="Exhibitions.html">
+                    <img src="Flask-icon.png" alt="Flask 1">
+                    <span class="flask-text">Exhibitions</span>
+                </a>
+            </div>
+            <div class="footer-flask">
+                <a href="Events.html">
+                    <img src="Flask-icon.png" alt="Flask 2">
+                    <span class="flask-text">Events</span>
+                </a>
+            </div>
+            <div class="footer-flask">
+                <a href="Visit.html">
+                    <img src="Flask-icon.png" alt="Flask 3">
+                    <span class="flask-text">Visit</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
