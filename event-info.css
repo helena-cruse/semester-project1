@@ -1,15 +1,13 @@
-* {
-    box-sizing: border-box;
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Exo 2", sans-serif;
+    background-color: rgba(255, 116, 17, 1);
+    color: white;
+    overflow-x: hidden;
 }
 
-/* General Style*/
-
-html,body {
-        overflow-x: hidden;
-        margin: 0;  
-        padding: 0; 
-        background-color: rgba(255, 116, 17, 1);
-}
 
 /* Navigation menu */
 
@@ -57,32 +55,8 @@ html,body {
     width: 40%;
 }
 
-
-/* Main Visit Section */
-
-.hero-img {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 10vw;
-    margin-bottom: 0;
-}
-
-.hero-img img {
-        width: 100%;
-        height: auto;
-        max-height: 300px;
-        object-fit: cover;
-}
-.visit-container {
-    margin:auto 0;
-    padding: 5%;
-    text-align: center;
-    font-family: "Exo 2", sans-serif;
-    margin-top: 0;
-}
-
-.visit-title {
+/* Event Page Title */
+.event-title {
     text-align: center;
     font-family: "Orbitron", sans-serif;
     font-size: 5vh;
@@ -92,8 +66,13 @@ html,body {
     animation: bounce 1.5s infinite;
 }
 
-/* Info Boxes */
-.info-box {
+
+.event-page {
+    padding-top: 10vh;
+}
+
+/* Event Card */
+.event-1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -105,46 +84,48 @@ html,body {
     gap: 5vw;
     transform: skewY(-2deg);
     transition: transform 0.3s ease-in-out;
-    text-align: left;
-    font-size: 1.2vw;
 }
 
-.info-box h3 {
-    font-size: 1.8vw;
-    margin-bottom: 1.5%;
+.event-1:hover {
+    transform: skewY(0deg) scale(1.03);
 }
 
-.info-box ul {
-    margin: 0;
-    padding-left: 1.5em;
+/* Reverse Layout */
+.event-1.reverse {
+    flex-direction: row-reverse;
 }
 
-.info-box li {
-    margin-bottom: 1%;
-    line-height: 1.5;
-}
-
-/* Google Maps Section */
-.map-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5vh 5vw;
-    padding: 4vh;
-    background: linear-gradient(135deg, #ffe600 30%, rgba(253, 195, 154, 1) 70%);
+/* Event Image */
+.event-photo img {
+    width: 30vw;
+    height: auto;
     border-radius: 3vw;
-    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.3);
-    gap: 5vw;
-    transform: skewY(-2deg);
-    transition: transform 0.3s ease-in-out;
-    text-align: left;
-    font-size: 1.2vw;
+    box-shadow: 0 3vh 5vh rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
 }
 
-.map-container h3 {
-    font-size: 1.8vw;
-    margin-bottom: 1.5%;
-    color: #000000;
+.event-photo img:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+/* Event Details */
+.event-info {
+    max-width: 50%;
+    text-align: left;
+}
+
+.event-heading {
+    font-family: "Orbitron", sans-serif;
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: #000;
+}
+
+.event-description {
+    font-family: "Exo 2", sans-serif;
+    font-size: 2.5vh;
+    line-height: 2.5vh;
+    color: #000;
 }
 
 
@@ -152,17 +133,12 @@ html,body {
 /* Footer */
 
 .footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    gap: 20%;
     background-color: rgba(253, 195, 154, 1);
     padding: 2%;
-    display: flex;
-    justify-content: center;
-    gap: 20%;
 }
-
   
 .footer-flask {
     position: relative;
@@ -196,5 +172,46 @@ html,body {
     }
     50% {
         transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .event-title {
+        font-size: 6vw;
+        margin: 3vh 0;
+    }
+
+    /* Event Card */
+    .event-1 {
+        flex-direction: column;
+        margin: 4vh 2vw;
+        padding: 3vh;
+        gap: 3vh;
+    }
+
+    .event-1.reverse {
+        flex-direction: column;
+    }
+
+    /* Event Image */
+    .event-photo img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Event Details */
+    .event-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .event-heading {
+        font-size: 4.5vw;
+        margin-bottom: 2vh;
+    }
+
+    .event-description {
+        font-size: 3.5vw;
+        line-height: 1.8;
     }
 }

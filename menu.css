@@ -1,0 +1,159 @@
+
+
+/* General Style*/
+
+html,body {
+        overflow-x: hidden;
+        margin: 0;  
+        padding: 0; 
+        background-color: rgba(255, 116, 17, 1);
+        height: 100%;
+}
+
+/* Navigation menu */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    width: 100%;
+    background-color: rgba(253, 195, 154, 1);
+    font-family: "Orbitron", sans-serif;
+    padding: 10px 30px;  
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.navbar .left-section {
+    display: flex;
+    align-items: center;  
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-right: 10px; 
+    font-size: 3vw;
+}
+
+.header-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+.header-logo img {
+    height: 40px; 
+    width: auto;
+}
+
+.hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hamburger-menu img {
+    width: 40%;
+}
+
+
+
+/* Main Menu Section */
+.menu-container {
+    flex: 1;
+    margin-top: 15vh; /* Adjusts for the fixed navbar */
+    padding: 5%;
+    text-align: center;
+}
+
+.menu-title {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.5vw;
+    margin-bottom: 5%;
+    color: #ffffff;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 5%;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-item {
+    text-align: center;
+    background-color: rgba(253, 195, 154, 1);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5%;
+    width: 80%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.menu-icon .iconify {
+    font-size: 5vw; /* Icon size */
+    color: #ffffff; /* Matches your page design */
+    margin-bottom: 10%; /* Space below the icon */
+    height: 5%;
+}
+
+.menu-item p {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+
+
+/* Footer */
+
+.footer {
+    position: fixed; /* Makes the footer stick to the bottom */
+    bottom: 0; /* Aligns it to the bottom of the viewport */
+    left: 0; /* Aligns it to the left edge of the page */
+    width: 100%; /* Ensures the footer spans the entire width of the page */
+    background-color: rgba(253, 195, 154, 1); /* Keeps your current background color */
+    padding: 2%; /* Keeps your existing padding */
+    display: flex;
+    justify-content: center;
+    gap: 20%; /* Keeps your existing spacing between items */
+}
+  
+.footer-flask {
+    position: relative;
+    width: 9%; 
+    height: auto; 
+    text-align: center; 
+}
+
+.flask-text:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+  
+.footer-flask img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.footer-flask .flask-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; 
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Orbitron";
+}
+

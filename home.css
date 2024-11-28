@@ -88,22 +88,9 @@ object-fit: cover;
         padding-right: 20%;
         font-size: 3vw;
         font-family: "Exo 2";
+        padding-bottom: 5%;
 }
 
-/* Bounce button */
-
-.Ticket-info-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-    margin-bottom: 30%;
-    animation: bounce 1s ease infinite;
-}
-
-.Ticket-info-button img {
-    width: 80%;
-}
 
 .text-box2 {
     background-color: rgba(253, 195, 154, 1);
@@ -180,17 +167,6 @@ object-fit: cover;
 
 
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0); /* Start og slutt på samme plass */
-    }
-    40% {
-      transform: translateY(-30px); /* Flytt opp */
-    }
-    60% {
-      transform: translateY(-15px); /* Flytt opp mindre */
-    }
-  }
 
 
 

@@ -81,9 +81,18 @@ body {
 
 /* Section Styling */
 
-.Geology-container, .Prehistoric-container, .Space-container, .Booking-container {
+.Geology-container, .Prehistoric-container, .Space-container {
     width: 60%;
     padding: 8%;
+    background-color: rgb(136, 121, 59);
+    border-radius: 5%;
+    text-align: center;
+    margin: 5%;
+}
+.Booking-container {
+    width: 60%;
+    padding: 5%;
+    padding-top: 3%;
     background-color: rgb(136, 121, 59);
     border-radius: 5%;
     text-align: center;
@@ -131,7 +140,7 @@ body {
     font-size: 1vw;
 }
 
-.booking-form button {
+.booking-button {
     background-color: #000;
     color: #fff;
     font-family: "Orbitron", sans-serif;
@@ -142,7 +151,7 @@ body {
     cursor: pointer;
 }
 
-.booking-form button:hover {
+.booking-button:hover {
     background-color: #444;
 }
 
