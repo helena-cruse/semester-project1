@@ -62,41 +62,72 @@ body {
 
 /* Main Content */
 
+.exhibition-title {
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 5vh;
+    margin: 5vh 0;
+    color: #ffe600;
+    text-shadow: 0.3vh 0.3vh 0.6vh rgba(0, 0, 0, 0.4);
+    animation: bounce 1.5s infinite;
+    margin-top: 15vh;
+}
+
 .wrapper {
-    flex: 1; /* Ensures content pushes the footer to the bottom */
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .container {
-    margin-top: 15vh;
+    margin-top: 5vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, auto); /* Includes the booking container */
+    grid-template-rows: repeat(2, auto);
     align-items: center;
     justify-items: center;
-    gap: 1vw; /* Adds consistent spacing between rows and columns */
+    gap: 1vw;
     }
     
 
 /* Section Styling */
 
 .Geology-container, .Prehistoric-container, .Space-container {
-    width: 60%;
-    padding: 8%;
-    background-color: rgb(136, 121, 59);
-    border-radius: 5%;
-    text-align: center;
-    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vh 5vw;
+    padding: 4vh;
+    background: linear-gradient(135deg, #ffe600 30%, rgba(253, 195, 154, 1) 70%);
+    border-radius: 3vw;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.3);
+    gap: 5vw;
+    transform: skewY(-2deg);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    font-size: 1.2vw;
 }
+
+
+.Geology-container:hover, .Prehistoric-container:hover, .Space-container:hover {
+    transform: skewY(0deg) scale(1.03);
+}
+
+
 .Booking-container {
-    width: 60%;
-    padding: 5%;
-    padding-top: 3%;
-    background-color: rgb(136, 121, 59);
-    border-radius: 5%;
-    text-align: center;
-    margin: 5%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5vh 5vw;
+    padding: 4vh;
+    background: linear-gradient(135deg, #ffe600 30%, rgba(253, 195, 154, 1) 70%);
+    border-radius: 3vw;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.3);
+    gap: 2vh;
+    transform: skewY(-2deg);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    font-size: 1.2vw;
 }
 
 .Geology-container p, .Prehistoric-container p, .Space-container p {
@@ -114,7 +145,7 @@ body {
 .Booking-container h2 {
     font-family: "Orbitron", sans-serif;
     color: #000;
-    margin-bottom: 10px;
+    margin-bottom: 10vh;
     font-size: 2vw;
 }
 
@@ -133,10 +164,10 @@ body {
 .booking-form input,
 .booking-form select {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 5%;
+    margin-bottom: 3vh;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 5%;
     font-size: 1vw;
 }
 
@@ -147,7 +178,7 @@ body {
     font-size: 1.2vw;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5%;
     cursor: pointer;
 }
 
@@ -188,4 +219,15 @@ body {
     font-weight: bold;
     text-align: center;
     font-family: "Orbitron";
+}
+
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
