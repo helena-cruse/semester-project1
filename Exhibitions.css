@@ -231,3 +231,65 @@ body {
         transform: translateY(-10px);
     }
 }
+
+
+@media (max-width: 1440px) {
+    
+    /* Exhibition Title */
+    .exhibition-title {
+        font-size: 4vh;
+        margin-top: 15vh;
+    }
+
+    /* Wrapper */
+    .wrapper {
+        flex-direction: column;
+    }
+
+    /* Container */
+    .container {
+        grid-template-columns: 100%;
+        gap: 2vh;
+    }
+
+    /* Section Styling */
+    .Geology-container, .Prehistoric-container, .Space-container {
+        flex-direction: column;
+        padding: 3vh;
+        gap: 2vh;
+    }
+
+    .Geology-container img, .Prehistoric-container img, .Space-container img {
+        width: 50%;
+    }
+
+    .Geology-container p, .Prehistoric-container p, .Space-container p {
+        font-size: 2vw;
+    }
+
+    /* Booking Container */
+    .Booking-container {
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 1vh;
+        padding: 10vh;
+        font-size: 1.9vw;
+    }
+
+    .Booking-container h2 {
+        font-size: 1.8vw;
+        margin-bottom: 4vh;
+    }
+
+    /* Booking Form */
+    .booking-form label {
+        font-size: 2vw;
+    }
+
+    .booking-form input,
+    .booking-form select {
+        font-size: 2vw;
+        padding: 10%;
+    }
+
+}

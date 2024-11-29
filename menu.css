@@ -164,9 +164,9 @@ html,body {
     }
     
     .menu-icon .iconify {
-        font-size: 8vw; /* Increase the icon size */
-        width: 8vw; /* Adjust the width to match the font size */
-        height: 8vw; /* Adjust the height to match the font size */
+        font-size: 8vw;
+        width: 8vw;
+        height: 8vw;
         margin-bottom: 5%;
     }
 }

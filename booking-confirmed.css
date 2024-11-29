@@ -168,3 +168,34 @@ html, body {
     text-align: center;
     font-family: "Orbitron";
 }
+
+@media (max-width: 768px) {
+
+    .confirmation-container h2 {
+        font-size: 6vw; /* Adjust heading size */
+        margin-top: 10vh;
+    }
+
+    .confirmation-container p {
+        font-size: 4vw; /* Adjust paragraph size */
+    }
+
+    .booking-details {
+        width: 90%; /* Expand the booking details section */
+        font-size: 4vw; /* Resize font */
+    }
+
+    .home-button {
+        font-size: 4vw; /* Adjust button text size */
+        padding: 3%; /* Adjust padding */
+    }
+   
+    .footer-flask {
+        width: 15%; 
+    }
+
+    .footer-flask .flask-text {
+        font-size: 2vw; 
+    }
+ }
+
