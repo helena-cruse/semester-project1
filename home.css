@@ -195,3 +195,14 @@ li {
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    .text-box1 h2, .text-box2 h2 {
+        font-size: 6vw;
+    }
+
+    .info-text1, .info-text2 {
+        font-size: 4vw;
+        line-height: 1.8;
+    }
+}

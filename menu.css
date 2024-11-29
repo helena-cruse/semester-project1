@@ -61,21 +61,21 @@ html,body {
 /* Main Menu Section */
 .menu-container {
     flex: 1;
-    margin-top: 15vh; /* Adjusts for the fixed navbar */
+    margin-top: 15vh;
     padding: 5%;
     text-align: center;
 }
 
 .menu-title {
     font-family: "Orbitron", sans-serif;
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin-bottom: 5%;
     color: #ffffff;
 }
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 5%;
     justify-items: center;
     align-items: center;
@@ -99,9 +99,9 @@ html,body {
 }
 
 .menu-icon .iconify {
-    font-size: 5vw; /* Icon size */
-    color: #ffffff; /* Matches your page design */
-    margin-bottom: 10%; /* Space below the icon */
+    font-size: 5vw;
+    color: #ffffff;
+    margin-bottom: 10%;
     height: 5%;
 }
 
@@ -115,15 +115,15 @@ html,body {
 /* Footer */
 
 .footer {
-    position: fixed; /* Makes the footer stick to the bottom */
-    bottom: 0; /* Aligns it to the bottom of the viewport */
-    left: 0; /* Aligns it to the left edge of the page */
-    width: 100%; /* Ensures the footer spans the entire width of the page */
-    background-color: rgba(253, 195, 154, 1); /* Keeps your current background color */
-    padding: 2%; /* Keeps your existing padding */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(253, 195, 154, 1);
+    padding: 2%;
     display: flex;
     justify-content: center;
-    gap: 20%; /* Keeps your existing spacing between items */
+    gap: 20%;
 }
   
 .footer-flask {
@@ -157,3 +157,16 @@ html,body {
     font-family: "Orbitron";
 }
 
+
+@media screen and (max-width: 768px) {
+    .menu-item p {
+        font-size: 4vw;
+    }
+    
+    .menu-icon .iconify {
+        font-size: 8vw; /* Increase the icon size */
+        width: 8vw; /* Adjust the width to match the font size */
+        height: 8vw; /* Adjust the height to match the font size */
+        margin-bottom: 5%;
+    }
+}
