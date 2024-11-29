@@ -172,22 +172,22 @@ html, body {
 @media (max-width: 768px) {
 
     .confirmation-container h2 {
-        font-size: 6vw; /* Adjust heading size */
+        font-size: 6vw;
         margin-top: 10vh;
     }
 
     .confirmation-container p {
-        font-size: 4vw; /* Adjust paragraph size */
+        font-size: 4vw;
     }
 
     .booking-details {
-        width: 90%; /* Expand the booking details section */
-        font-size: 4vw; /* Resize font */
+        width: 90%;
+        font-size: 4vw;
     }
 
     .home-button {
-        font-size: 4vw; /* Adjust button text size */
-        padding: 3%; /* Adjust padding */
+        font-size: 4vw;
+        padding: 3%;
     }
    
     .footer-flask {

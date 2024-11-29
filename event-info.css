@@ -214,4 +214,12 @@ body {
         font-size: 3.5vw;
         line-height: 1.8;
     }
+
+    .footer-flask {
+        width: 15%; 
+    }
+
+    .footer-flask .flask-text {
+        font-size: 2vw; 
+    }
 }

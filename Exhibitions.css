@@ -234,7 +234,7 @@ body {
 
 
 @media (max-width: 1440px) {
-    
+
     /* Exhibition Title */
     .exhibition-title {
         font-size: 4vh;
@@ -292,4 +292,11 @@ body {
         padding: 10%;
     }
 
+    .footer-flask {
+        width: 15%; 
+    }
+
+    .footer-flask .flask-text {
+        font-size: 2vw; 
+    }
 }

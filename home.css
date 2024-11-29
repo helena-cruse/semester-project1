@@ -195,8 +195,27 @@ li {
     }
 }
 
+@media screen and (max-width: 1440px) {
+
+.footer-flask {
+    width: 15%; 
+}
+
+.footer-flask .flask-text {
+    font-size: 2vw; 
+}
+}
+
+
 
 @media screen and (max-width: 768px) {
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
     .text-box1 h2, .text-box2 h2 {
         font-size: 6vw;
     }
@@ -205,5 +224,19 @@ li {
         font-size: 4vw;
         line-height: 1.8;
     }
+
+    .footer-flask {
+        width: 15%; 
+    }
+
+    .footer-flask .flask-text {
+        font-size: 2vw; 
+    }
 }
 
+@media screen and (max-width: 480px) {
+    .hero img {
+        height: 50vh;
+        object-fit: cover;
+    }
+}

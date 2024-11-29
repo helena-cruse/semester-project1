@@ -169,4 +169,12 @@ html,body {
         height: 8vw;
         margin-bottom: 5%;
     }
+
+    .footer-flask {
+        width: 15%; 
+    }
+
+    .footer-flask .flask-text {
+        font-size: 2vw; 
+    }
 }

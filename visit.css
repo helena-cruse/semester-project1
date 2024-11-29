@@ -203,4 +203,12 @@ html,body {
     .info-box {
         font-size: 2vw;
     }
+
+    .footer-flask {
+        width: 15%; 
+    }
+
+    .footer-flask .flask-text {
+        font-size: 2vw; 
+    }
 }
