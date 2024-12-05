@@ -6,6 +6,9 @@ html, body {
     height: 100%;
     margin: 0;
 }
+* {
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
@@ -65,129 +68,124 @@ body {
 .exhibition-title {
     text-align: center;
     font-family: "Orbitron", sans-serif;
-    font-size: 5vh;
-    margin: 5vh 0;
+    font-size: 6vw;
     color: #ffe600;
-    text-shadow: 0.3vh 0.3vh 0.6vh rgba(0, 0, 0, 0.4);
-    animation: bounce 1.5s infinite;
+    text-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
     margin-top: 15vh;
+    animation: bounce 1.5s infinite;
 }
 
 .wrapper {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh auto;
+    padding: 0 5%;
+    font-family: "Exo 2";
 }
 
 .container {
-    margin-top: 5vh;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, auto);
-    align-items: center;
-    justify-items: center;
-    gap: 1vw;
-    }
-    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3vw;
+    width: 100%;
+    max-width: 1200px;
+}
 
-/* Section Styling */
-
-.Geology-container, .Prehistoric-container, .Space-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5vh 5vw;
-    padding: 4vh;
+.container > div {
     background: linear-gradient(135deg, #ffe600 30%, rgba(253, 195, 154, 1) 70%);
-    border-radius: 3vw;
-    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.3);
-    gap: 5vw;
-    transform: skewY(-2deg);
-    transition: transform 0.3s ease-in-out;
-    text-align: left;
-    font-size: 1.2vw;
+    border-radius: 1vw;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+.container > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);
 }
 
-
-.Geology-container:hover, .Prehistoric-container:hover, .Space-container:hover {
-    transform: skewY(0deg) scale(1.03);
+.container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 2vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
 }
 
+.container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1vw 0 0;
+}
 
 .Booking-container {
-    display:flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 5vh 5vw;
-    padding: 4vh;
+    position: relative;
+    margin: 10vh auto; 
+    padding: 3vw;
+    width: 100%;
     background: linear-gradient(135deg, #ffe600 30%, rgba(253, 195, 154, 1) 70%);
-    border-radius: 3vw;
-    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.3);
-    gap: 2vh;
-    transform: skewY(-2deg);
-    transition: transform 0.3s ease-in-out;
-    text-align: left;
-    font-size: 1.2vw;
+    border-radius: 1vw;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-.Geology-container p, .Prehistoric-container p, .Space-container p {
-    font-family: "Exo 2";
-    font-size: 1.8vw;
-    margin-top: 5%;
-    color: rgb(0, 0, 0);
-}
-
-.Geology-container img, .Prehistoric-container img, .Space-container img {
-    width: 20vw;
-}
-
-
+/* Booking Title */
 .Booking-container h2 {
     font-family: "Orbitron", sans-serif;
-    color: #000;
-    margin-bottom: 10vh;
-    font-size: 2vw;
+    font-size: 4vw;
+    color: #333;
+    margin-bottom: 3vw;
 }
 
 .booking-form {
-    font-family: "Exo 2", sans-serif;
-    color: #000;
+    justify-content: center;
 }
 
+/* Booking Form Labels */
 .booking-form label {
-    display: block;
+    grid-column: span 2;
+    font-size: 1rem;
     text-align: left;
-    margin-bottom: 5px;
-    font-size: 1.2vw;
+    margin-bottom: 0.5vw;
 }
 
+/* Booking Form Inputs and Selects */
 .booking-form input,
 .booking-form select {
     width: 100%;
-    padding: 5%;
-    margin-bottom: 3vh;
-    border: 1px solid #ccc;
-    border-radius: 5%;
-    font-size: 1vw;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    margin-bottom: 1.5vw;
 }
 
+/* Booking Button */
 .booking-button {
-    background-color: #000;
+    grid-column: span 2;
+    background-color: #333;
     color: #fff;
     font-family: "Orbitron", sans-serif;
-    font-size: 1.2vw;
-    padding: 10px 20px;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 5%;
+    border-radius: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 2vw;
+    justify-self: center;
 }
 
 .booking-button:hover {
     background-color: #444;
 }
-
 /* Footer */
-
 .footer {
     display: flex; 
     justify-content: center; 
@@ -220,8 +218,6 @@ body {
     text-align: center;
     font-family: "Orbitron";
 }
-
-
 /* Animations */
 @keyframes bounce {
     0%, 100% {
@@ -298,5 +294,38 @@ body {
 
     .footer-flask .flask-text {
         font-size: 2vw; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 6vw;
+    }
+
+    .header-logo img {
+        height: 12vw;
+    }
+
+    .exhibition-title {
+        font-size: 8vw;
+        margin-top: 10vh;
+    }
+
+    .container img {
+        max-width: 150px;
+    }
+
+    .Booking-container {
+        padding: 4vw;
+        margin-top: 5vh;
+    }
+
+    .Booking-container h2 {
+        font-size: 5vw;
+    }
+    
+    .booking-button {
+        padding: 0.5rem;
+        font-size: 1rem;
     }
 }
