@@ -93,22 +93,27 @@ html,body {
 }
 
 /* Info Boxes */
-.info-box {
+.info-box, .map-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 5vh 5vw;
     padding: 4vh;
     background: linear-gradient(135deg, #ffe600 30%, rgba(253, 195, 154, 1) 70%);
     border-radius: 3vw;
     box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.3);
-    gap: 5vw;
+    gap: 2vh;
     transform: skewY(-2deg);
     transition: transform 0.3s ease-in-out;
-    text-align: left;
+    text-align: center;
     font-size: 1.2vw;
 }
 
+.info-box:hover, .map-container:hover {
+    transform: skewY(0deg) scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
 .info-box h3 {
     font-size: 1.8vw;
     margin-bottom: 1.5%;
@@ -124,29 +129,12 @@ html,body {
     line-height: 1.5;
 }
 
-/* Google Maps Section */
-.map-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5vh 5vw;
-    padding: 4vh;
-    background: linear-gradient(135deg, #ffe600 30%, rgba(253, 195, 154, 1) 70%);
-    border-radius: 3vw;
-    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.3);
-    gap: 5vw;
-    transform: skewY(-2deg);
-    transition: transform 0.3s ease-in-out;
-    text-align: left;
-    font-size: 1.2vw;
-}
 
 .map-container h3 {
     font-size: 1.8vw;
     margin-bottom: 1.5%;
     color: #000000;
 }
-
 
 
 /* Footer */
@@ -210,5 +198,8 @@ html,body {
 
     .footer-flask .flask-text {
         font-size: 2vw; 
+    }
+    .map-container h3, .info-box h3 {
+        font-size: 4vw;
     }
 }
